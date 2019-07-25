@@ -1,6 +1,5 @@
 # Shape Image View (Compatible with AndroidX)
 [![](https://jitpack.io/v/arefhosseini/android-shape-imageview.svg)](https://jitpack.io/#arefhosseini/android-shape-imageview)
-
 [![](https://jitci.com/gh/arefhosseini/android-shape-imageview/svg)](https://jitci.com/gh/arefhosseini/android-shape-imageview)
 
 ## How to use
