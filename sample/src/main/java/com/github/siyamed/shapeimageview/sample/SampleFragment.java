@@ -1,7 +1,7 @@
 package com.github.siyamed.shapeimageview.sample;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,12 +36,12 @@ public class SampleFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(layout, container, false);
-        final ImageView imageView = (ImageView) view.findViewById(R.id.relative_test_img_1);
+        final ImageView imageView = view.findViewById(R.id.relative_test_img_1);
         if(imageView != null) {
             imageView.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Picasso.with(getActivity()).load(Constants.IMAGES[0][0]).into(imageView);
+                    Picasso.get().load(Constants.IMAGES[0][0]).into(imageView);
                 }
             }, 3000);
         }

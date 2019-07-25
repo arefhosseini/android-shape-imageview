@@ -2,7 +2,7 @@ package com.github.siyamed.shapeimageview.sample;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,12 +36,12 @@ public class SampleListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list_sample, container, false);
-        final Picasso picasso = Picasso.with(getActivity());
+        final Picasso picasso = new Picasso.Builder(getActivity()).build();
         picasso.setLoggingEnabled(true);
         picasso.setIndicatorsEnabled(false);
 
         int listLayout = getArguments().getInt(ARG_LAYOUT);
-        final ListView listView = (ListView) view.findViewById(R.id.list);
+        final ListView listView = view.findViewById(R.id.list);
         Adapter adapter = new Adapter(getActivity(), picasso, listLayout);
         listView.setAdapter(adapter);
 
@@ -67,8 +67,8 @@ public class SampleListFragment extends Fragment {
             if(convertView == null) {
                 convertView = LayoutInflater.from(getContext()).inflate(layout, parent, false);
                 holder = new ViewHolder();
-                holder.image = (ImageView) convertView.findViewById(R.id.image);
-                holder.title = (TextView) convertView.findViewById(R.id.title);
+                holder.image = convertView.findViewById(R.id.image);
+                holder.title = convertView.findViewById(R.id.title);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();

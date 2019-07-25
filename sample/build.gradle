@@ -1,16 +1,15 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.github.ben-manes.versions'
 
 android {
     compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
     buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
 
     defaultConfig {
-        applicationId "com.github.siyamed.shapeimageview.sample"
+        applicationId "com.github.arefhosseini.shapeimageview.sample"
         minSdkVersion Integer.parseInt(project.ANDROID_BUILD_MIN_SDK_VERSION)
         targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
-        versionCode 3
-        versionName "1.0"
+        versionCode 4
+        versionName "1.0.2"
     }
     buildTypes {
         release {
@@ -21,10 +20,10 @@ android {
 }
 
 dependencies {
-    compile project(':library')
-    compile 'com.android.support:appcompat-v7:23.0.1'
-    compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'com.android.support:gridlayout-v7:23.0.1'
-    compile 'com.android.support:support-v4:23.0.1'
-    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    implementation project(':library')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.astuetz:pagerslidingtabstrip:1.0.1'
 }

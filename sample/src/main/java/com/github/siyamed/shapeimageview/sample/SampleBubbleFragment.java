@@ -2,7 +2,7 @@ package com.github.siyamed.shapeimageview.sample;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,13 +38,13 @@ public class SampleBubbleFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_chat_sample, container, false);
-        final Picasso picasso = Picasso.with(getActivity());
+        final Picasso picasso = new Picasso.Builder(getActivity()).build();
         picasso.setLoggingEnabled(true);
         picasso.setIndicatorsEnabled(false);
 
         int listLayout1 = getArguments().getInt(ARG_LAYOUT_1);
         int listLayout2 = getArguments().getInt(ARG_LAYOUT_2);
-        final ListView listView = (ListView) view.findViewById(R.id.list);
+        final ListView listView = view.findViewById(R.id.list);
         Adapter adapter = new Adapter(getActivity(), picasso, listLayout1, listLayout2);
         listView.setAdapter(adapter);
 
@@ -91,8 +91,8 @@ public class SampleBubbleFragment extends Fragment {
             if(convertView == null) {
                 convertView = LayoutInflater.from(getContext()).inflate(layout, parent, false);
                 holder = new ViewHolder();
-                holder.image = (ImageView) convertView.findViewById(R.id.image);
-                holder.text = (TextView) convertView.findViewById(R.id.text);
+                holder.image = convertView.findViewById(R.id.image);
+                holder.text = convertView.findViewById(R.id.text);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();
