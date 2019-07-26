@@ -5,11 +5,11 @@ android {
     buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
 
     defaultConfig {
-        applicationId "com.github.arefhosseini.shapeimageview.sample"
+        applicationId "com.github.siyamed.shapeimageview.sample"
         minSdkVersion Integer.parseInt(project.ANDROID_BUILD_MIN_SDK_VERSION)
         targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
-        versionCode 5
-        versionName "1.0.3"
+        versionCode 6
+        versionName "1.0.4"
     }
     buildTypes {
         release {
@@ -26,5 +26,4 @@ dependencies {
     implementation 'androidx.gridlayout:gridlayout:1.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.astuetz:pagerslidingtabstrip:1.0.1'
-    implementation project(':library')
 }

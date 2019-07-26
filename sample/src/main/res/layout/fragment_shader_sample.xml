@@ -17,7 +17,7 @@
             android:orientation="horizontal"
             android:weightSum="3">
 
-            <com.github.arefhosseini.shapeimageview.CircularImageView
+            <com.github.siyamed.shapeimageview.CircularImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
@@ -26,7 +26,7 @@
                 app:siBorderWidth="6dp"
                 app:siBorderColor="@color/darkgray"/>
 
-            <com.github.arefhosseini.shapeimageview.RoundedImageView
+            <com.github.siyamed.shapeimageview.RoundedImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -37,7 +37,7 @@
                 app:siBorderColor="@color/darkgray"
                 app:siSquare="true"/>
 
-            <com.github.arefhosseini.shapeimageview.BubbleImageView
+            <com.github.siyamed.shapeimageview.BubbleImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -52,13 +52,13 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <com.github.arefhosseini.shapeimageview.CircularImageView
+            <com.github.siyamed.shapeimageview.CircularImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="8dp"
                 android:src="@drawable/neo"/>
 
-            <com.github.arefhosseini.shapeimageview.CircularImageView
+            <com.github.siyamed.shapeimageview.CircularImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="8dp"
@@ -66,7 +66,7 @@
                 app:siBorderWidth="4dp"
                 app:siBorderColor="@color/darkgray"/>
 
-            <com.github.arefhosseini.shapeimageview.CircularImageView
+            <com.github.siyamed.shapeimageview.CircularImageView
                 android:layout_width="80dp"
                 android:layout_height="120dp"
                 android:layout_margin="8dp"
@@ -81,14 +81,14 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <com.github.arefhosseini.shapeimageview.RoundedImageView
+            <com.github.siyamed.shapeimageview.RoundedImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="8dp"
                 android:src="@drawable/neo"
                 app:siRadius="6dp"/>
 
-            <com.github.arefhosseini.shapeimageview.RoundedImageView
+            <com.github.siyamed.shapeimageview.RoundedImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_margin="8dp"
@@ -97,7 +97,7 @@
                 app:siBorderWidth="6dp"
                 app:siBorderColor="@color/darkgray"/>
 
-            <com.github.arefhosseini.shapeimageview.RoundedImageView
+            <com.github.siyamed.shapeimageview.RoundedImageView
                 android:layout_width="120dp"
                 android:layout_height="80dp"
                 android:layout_margin="8dp"
@@ -113,21 +113,21 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <com.github.arefhosseini.shapeimageview.BubbleImageView
+            <com.github.siyamed.shapeimageview.BubbleImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/neo"
                 app:siTriangleHeight="10dp"
                 android:layout_margin="8dp"/>
 
-            <com.github.arefhosseini.shapeimageview.BubbleImageView
+            <com.github.siyamed.shapeimageview.BubbleImageView
                 android:layout_width="120dp"
                 android:layout_height="80dp"
                 android:src="@drawable/neo"
                 app:siTriangleHeight="10dp"
                 android:layout_margin="8dp"/>
 
-            <com.github.arefhosseini.shapeimageview.BubbleImageView
+            <com.github.siyamed.shapeimageview.BubbleImageView
                 android:layout_width="120dp"
                 android:layout_height="80dp"
                 android:src="@drawable/neo"

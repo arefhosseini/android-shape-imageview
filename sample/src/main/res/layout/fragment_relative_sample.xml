@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.github.arefhosseini.shapeimageview.CircularImageView
+    <com.github.siyamed.shapeimageview.CircularImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:siBorderWidth="6dp"
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.github.arefhosseini.shapeimageview.CircularImageView
+        <com.github.siyamed.shapeimageview.CircularImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@android:drawable/ic_dialog_map"
@@ -25,7 +25,7 @@
 
     </RelativeLayout>
 
-    <com.github.arefhosseini.shapeimageview.HexagonImageView
+    <com.github.siyamed.shapeimageview.HexagonImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_margin="8dp"
@@ -34,7 +34,7 @@
         app:siBorderColor="@color/darkgray"
         android:layout_gravity="center_horizontal"/>
 
-    <com.github.arefhosseini.shapeimageview.HexagonImageView
+    <com.github.siyamed.shapeimageview.HexagonImageView
         android:id="@+id/img_circle"
         android:layout_width="40dp"
         android:layout_height="40dp"

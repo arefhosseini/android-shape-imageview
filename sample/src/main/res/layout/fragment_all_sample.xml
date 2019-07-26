@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.github.arefhosseini.shapeimageview.CircularImageView
+            <com.github.siyamed.shapeimageview.CircularImageView
                 android:id="@+id/relative_test_img_1"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
@@ -51,7 +51,7 @@
             android:orientation="horizontal"
             android:weightSum="3">
 
-            <com.github.arefhosseini.shapeimageview.CircularImageView
+            <com.github.siyamed.shapeimageview.CircularImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
@@ -60,7 +60,7 @@
                 app:siBorderWidth="6dp"
                 app:siBorderColor="@color/darkgray"/>
 
-            <com.github.arefhosseini.shapeimageview.RoundedImageView
+            <com.github.siyamed.shapeimageview.RoundedImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -71,7 +71,7 @@
                 app:siBorderColor="@color/darkgray"
                 app:siSquare="true"/>
 
-            <com.github.arefhosseini.shapeimageview.BubbleImageView
+            <com.github.siyamed.shapeimageview.BubbleImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -95,7 +95,7 @@
             android:orientation="horizontal"
             android:weightSum="3">
 
-            <com.github.arefhosseini.shapeimageview.mask.PorterShapeImageView
+            <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -104,7 +104,7 @@
                 android:src="@drawable/neo"
                 app:siSquare="true"/>
 
-            <com.github.arefhosseini.shapeimageview.mask.PorterShapeImageView
+            <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -113,7 +113,7 @@
                 android:src="@drawable/neo"
                 app:siSquare="true"/>
 
-            <com.github.arefhosseini.shapeimageview.mask.PorterShapeImageView
+            <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -137,7 +137,7 @@
             android:orientation="horizontal"
             android:weightSum="2">
 
-            <com.github.arefhosseini.shapeimageview.mask.PorterShapeImageView
+            <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -146,7 +146,7 @@
                 android:src="@drawable/neo"
                 app:siSquare="true"/>
 
-            <com.github.arefhosseini.shapeimageview.mask.PorterShapeImageView
+            <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -162,7 +162,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <com.github.arefhosseini.shapeimageview.DiamondImageView
+            <com.github.siyamed.shapeimageview.DiamondImageView
                 android:layout_width="250dp"
                 android:layout_height="250dp"
                 android:layout_margin="8dp"
@@ -171,7 +171,7 @@
                 app:siBorderColor="@color/darkgray"
                 android:layout_gravity="center_horizontal"/>
 
-            <com.github.arefhosseini.shapeimageview.PentagonImageView
+            <com.github.siyamed.shapeimageview.PentagonImageView
                 android:layout_width="250dp"
                 android:layout_height="250dp"
                 android:layout_margin="8dp"
@@ -180,7 +180,7 @@
                 app:siBorderColor="@color/darkgray"
                 android:layout_gravity="center_horizontal"/>
 
-            <com.github.arefhosseini.shapeimageview.HexagonImageView
+            <com.github.siyamed.shapeimageview.HexagonImageView
                 android:layout_width="250dp"
                 android:layout_height="250dp"
                 android:layout_margin="8dp"
@@ -189,7 +189,7 @@
                 app:siBorderColor="@color/darkgray"
                 android:layout_gravity="center_horizontal"/>
 
-            <com.github.arefhosseini.shapeimageview.OctogonImageView
+            <com.github.siyamed.shapeimageview.OctogonImageView
                 android:layout_width="250dp"
                 android:layout_height="250dp"
                 android:layout_margin="8dp"
@@ -198,7 +198,7 @@
                 app:siBorderColor="@color/darkgray"
                 android:layout_gravity="center_horizontal"/>
 
-            <com.github.arefhosseini.shapeimageview.HeartImageView
+            <com.github.siyamed.shapeimageview.HeartImageView
                 android:layout_width="250dp"
                 android:layout_height="250dp"
                 android:layout_margin="8dp"
@@ -207,7 +207,7 @@
                 app:siBorderColor="@color/darkgray"
                 android:layout_gravity="center_horizontal"/>
 
-            <com.github.arefhosseini.shapeimageview.StarImageView
+            <com.github.siyamed.shapeimageview.StarImageView
                 android:layout_width="250dp"
                 android:layout_height="250dp"
                 android:layout_margin="8dp"
@@ -218,7 +218,7 @@
                 app:siStrokeJoin="round"
                 android:layout_gravity="center_horizontal"/>
 
-            <com.github.arefhosseini.shapeimageview.StarImageView
+            <com.github.siyamed.shapeimageview.StarImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
