@@ -1,52 +1,27 @@
-# Shape Image View 
-[![](https://travis-ci.org/siyamed/android-shape-imageview.svg?branch=master&style=flat)](https://travis-ci.org/siyamed/android-shape-imageview/) 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.siyamed/android-shape-imageview/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/com.github.siyamed/android-shape-imageview)
-
-Provides a set of custom shaped android imageview components, and a framework to define more shapes. Implements both **shader** and **bitmap mask** based image views. 
-
-[Shader]: http://developer.android.com/reference/android/graphics/BitmapShader.html
-[Path.addPath]: http://developer.android.com/reference/android/graphics/Path.html#addPath(android.graphics.Path)
-[Path]: http://developer.android.com/reference/android/graphics/Path.html
-[xfermode]: http://developer.android.com/reference/android/graphics/Xfermode.html
-[svg_location]: library/src/main/res/raw
-[svg_rectangle]: http://www.w3schools.com/svg/svg_rect.asp 
-[svg_circle]: http://www.w3schools.com/svg/svg_circle.asp 
-[svg_ellipse]: http://www.w3schools.com/svg/svg_ellipse.asp
-[svg_polygon]: http://www.w3schools.com/svg/svg_polygon.asp
-[svg_path]: http://www.w3schools.com/svg/svg_path.asp
-[svg_group]: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/g
-[svg_transformations]: https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform
-[sample_app_play_store]: https://play.google.com/store/apps/details?id=com.github.siyamed.shapeimageview.sample
-[youtube_video]: http://youtu.be/6fCkptmwxtQ
-
-* [Shader][Shader] based one uses *canvas draw methods* and *[Path][Path]* class, 
-* Mask based one uses [xfermode][xfermode] to draw image on bitmaps defined by android shape XML's or resource bitmaps.
-
-<div>
-<a href="images/shader-buble.png" style="float:left;">
-<img src="images/shader-buble.png" alt="Chat Bubble Image" height="600px"/>
-</a>
-<a href="images/all-samples.png" >
-<img src="images/all-samples.png" alt="Shape Image View" height="600px"/>
-</a>
-</div>
-
-There are many projects online implementing such components, however one goal of this project is to provide a 
-performant/smooth scrolling **image view component framework** to define different shapes for imageviews. 
-
-**For use with recycling view such as ListView or GridView please use shader based implementations.**
-
-[Sample app in play store][sample_app_play_store]
-
-[Youtube video][youtube_video]
+# Shape Image View (Compatible with AndroidX)
+[![](https://jitpack.io/v/arefhosseini/android-shape-imageview.svg)](https://jitpack.io/#arefhosseini/android-shape-imageview)
+[![](https://jitci.com/gh/arefhosseini/android-shape-imageview/svg)](https://jitci.com/gh/arefhosseini/android-shape-imageview)
 
 ## How to use
 
-Gradle dependency:
-```Groovy
-compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+<b>Step 1.</b> Add JitPack repository in your root build.gradle at the end of repositories:
+
+```groovy
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
 ```
 
+<b>Step 2.</b> Add the dependency:
+
+```groovy
+dependencies {
+    implementation 'com.github.arefhosseini:android-shape-imageview:1.0.2'
+}
+```
 ###Shader Based ImageView's
 ####BubbleImageView
 ![Android Bubble ImageView](images/small-bubble.png)
@@ -195,10 +170,6 @@ This method reads a shape file (either bitmap or an android shape xml), creates 
 
 See/execute the [sample](sample) for a demonstration of the components.
 
-If you are lazy check [this youtube video][youtube_video] demonstrating scrolling in the sample app
-
-You can download the [sample app from play store][sample_app_play_store] 
-
 ## Proguard
 
 ```
@@ -209,9 +180,3 @@ You can download the [sample app from play store][sample_app_play_store]
 -dontwarn com.github.siyamed.**
 -keep class com.github.siyamed.shapeimageview.**{ *; }
 ```
-
-## References
-* [MostafaGazar/CustomShapeImageView](https://github.com/MostafaGazar/CustomShapeImageView): Used this project a basis for bitmap masks  
-* [geosolutions-it/mapsforge/svg-android](https://github.com/geosolutions-it/mapsforge/tree/master/svg-android): Used and modified to create a path from a svg file 
-
-[![Android Shape Image View on Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-android--shape--imageview-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/932)
