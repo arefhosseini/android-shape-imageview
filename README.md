@@ -19,7 +19,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation 'com.github.arefhosseini:android-shape-imageview:1.0.2'
+    implementation 'com.github.arefhosseini:android-shape-imageview:1.0.3'
 }
 ```
 ###Shader Based ImageView's
